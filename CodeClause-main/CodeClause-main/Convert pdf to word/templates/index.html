@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Pdf to Doc</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+        }
+
+        div {
+            background: rgb(231, 108, 73);
+            background: linear-gradient(90deg, rgba(231, 108, 73, 0.9098827030812325) 1%, rgba(158, 227, 134, 1) 21%, rgba(222, 136, 172, 1) 43%, rgba(57, 208, 199, 1) 59%, rgba(214, 0, 219, 1) 73%, rgba(215, 0, 255, 1) 85%);
+            margin: 20px auto;
+            border-bottom: 5px  solid orangered;
+        }
+        div h1{
+            color: black;
+            text-align: center;
+        }
+        form {
+            height: 80%;
+            background: url(https://img.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_1048-14340.jpg?w=2000);
+            border: 3px solid blueviolet;
+            border-radius: 10px;
+            width: 80%;
+            min-width: 320px;
+            color: white;
+            margin: auto;
+            margin-top: 150px;
+            padding: 0px 10px;
+            justify-content: space-around;
+        }
+        form input{
+            align-self: center;
+            margin: 5px auto;
+            border: 2px solid greenyellow;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+        .btn {
+            width: 100%;
+            display: block;
+            border-width: 3px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h1>
+                ***** Upload pdf *****
+            </h1>
+        </div>
+
+
+
+        <form action="/index" method="POST" enctype="multipart/form-data">
+            <input type="file" name="filename">
+            <input class="btn btn-outline-success" type="submit" value="Upload">
+
+        </form>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
